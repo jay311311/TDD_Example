@@ -18,7 +18,15 @@ class MathStuff {
     }
     
     func divideNumber(x: Int, y:Int) -> Int {
-        return x/y
+        var doubleX = Double(x)
+        var doubleY = Double(y)
+
+        var valueDouble: Double
+        var valueInt: Int
+        valueDouble = doubleX/doubleY
+        valueDouble = round(valueDouble)
+        valueInt  = Int(valueDouble)
+        return valueInt
+//        return x/y
     }
-    
 }
